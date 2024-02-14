@@ -1,4 +1,5 @@
 ﻿using ConsoleApp1.ControlFlowStatements;
+using ConsoleApp1.DateExercise;
 using ConsoleApp1.IterativeStatements;
 using ConsoleApp1.Math;
 using System;
@@ -42,9 +43,12 @@ namespace ConsoleApp1
             //Task4 t4=new Task4();
             //t4.task4();
 
-            Exer1 e1=new Exer1();
+            //Exer1 e1 = new Exer1();
             //e1.exercise1();
-            e1.exercise5();
+
+            var obj=new DateTimeCS();
+            obj.DateExercise();
+
         }
     }
 }
