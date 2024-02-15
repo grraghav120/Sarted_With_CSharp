@@ -1,6 +1,7 @@
 ﻿using ConsoleApp1.ControlFlowStatements;
 using ConsoleApp1.DateExercise;
 using ConsoleApp1.IterativeStatements;
+using ConsoleApp1.ListExercise;
 using ConsoleApp1.Math;
 using System;
 
@@ -46,8 +47,11 @@ namespace ConsoleApp1
             //Exer1 e1 = new Exer1();
             //e1.exercise1();
 
-            var obj=new DateTimeCS();
-            obj.DateExercise();
+            //var obj=new DateTimeCS();
+            //obj.DateExercise();
+
+            var obj1 = new ListTask();
+            obj1.Task5();
 
         }
     }
