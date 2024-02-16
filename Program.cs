@@ -62,8 +62,20 @@ namespace ConsoleApp1
             //PracticeExercise practice = new PracticeExercise("raghav");
             //PracticeExercise practice1 = new PracticeExercise(10, 20);
 
-            Matrix mat = new Matrix();
-            mat.JaggedMatrix();
+            //Matrix mat = new Matrix();
+            //mat.JaggedMatrix();
+
+            //ReverseString reverse = new ReverseString();
+            //reverse.Reverse();
+
+            //ReverseOrderOfWords words = new ReverseOrderOfWords();
+            //words.ReverseOrder();
+
+            //Palindrome palindrome = new Palindrome();
+            //palindrome.isPalindrome();
+
+            FindSubString findSubString = new FindSubString();
+            findSubString.Substrings();
         }
     }
 }
