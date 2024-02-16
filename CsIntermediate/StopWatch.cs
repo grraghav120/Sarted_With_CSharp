@@ -17,10 +17,47 @@ namespace ConsoleApp1.CsIntermediate
             }
         }
         public void Stop() {
-            startStopWatch = false;
-            var currentTime=DateTime.Now;
-            var diff=currentTime - _interval;
-            Console.WriteLine("\t Lap Recorded at {0}",diff);
+            if (startStopWatch)
+            {
+                startStopWatch = false;
+                var currentTime = DateTime.Now;
+                var diff = currentTime - _interval;
+                Console.WriteLine("\t Lap Recorded at {0}", diff);
+            }
+            else
+            {
+                throw new InvalidOperationException("Already Stop Watched.");
+            }
+            
         } 
     }
+
+    public class StopWatchExcexute
+    {
+        public void execute()
+        {
+            StopWatch sw =new StopWatch();
+            bool stopLoop = false;
+            while (true)
+            {
+                Console.WriteLine("Press \n 1 -> Start \n 2-> Stop \n 3-> Exit");
+                var input = Console.ReadLine();
+                switch (input)
+                {
+                    case "1":
+                        sw.Start();
+                        Console.WriteLine("\t Started");
+                        break;
+                    case "2":
+                        sw.Stop();
+                        break;
+                    default:
+                        stopLoop = true;
+                        break;
+                }
+                if (stopLoop) break;
+            }
+        }
+    }
+
 }
