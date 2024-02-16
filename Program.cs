@@ -1,8 +1,10 @@
-﻿using ConsoleApp1.ControlFlowStatements;
+﻿using ConsoleApp1.Constructors;
+using ConsoleApp1.ControlFlowStatements;
 using ConsoleApp1.DateExercise;
 using ConsoleApp1.IterativeStatements;
 using ConsoleApp1.ListExercise;
 using ConsoleApp1.Math;
+using ConsoleApp1.Strings;
 using System;
 
 namespace ConsoleApp1
@@ -50,9 +52,14 @@ namespace ConsoleApp1
             //var obj=new DateTimeCS();
             //obj.DateExercise();
 
-            var obj1 = new ListTask();
-            obj1.Task5();
+            //var obj1 = new ListTask();
+            //obj1.Task6();
 
+            //var obj3 = new StringExercise();
+            //obj3.Task3();
+
+            PracticeExercise practice = new PracticeExercise("raghav");
+            PracticeExercise practice1 = new PracticeExercise(10, 20);
         }
     }
 }
