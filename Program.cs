@@ -1,4 +1,5 @@
-﻿using ConsoleApp1.Constructors;
+﻿using ConsoleApp1.ArrayExercise;
+using ConsoleApp1.Constructors;
 using ConsoleApp1.ControlFlowStatements;
 using ConsoleApp1.DateExercise;
 using ConsoleApp1.IterativeStatements;
@@ -58,8 +59,11 @@ namespace ConsoleApp1
             //var obj3 = new StringExercise();
             //obj3.Task3();
 
-            PracticeExercise practice = new PracticeExercise("raghav");
-            PracticeExercise practice1 = new PracticeExercise(10, 20);
+            //PracticeExercise practice = new PracticeExercise("raghav");
+            //PracticeExercise practice1 = new PracticeExercise(10, 20);
+
+            Matrix mat = new Matrix();
+            mat.JaggedMatrix();
         }
     }
 }
