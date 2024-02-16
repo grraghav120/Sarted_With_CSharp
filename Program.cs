@@ -15,8 +15,11 @@ namespace ConsoleApp1
             //Accessible access = new Accessible();
             //access.MainAccessible();
 
-            AccessModifiers obj=new AccessModifiers();
-            obj.execute();
+            //AccessModifiers obj=new AccessModifiers();
+            //obj.execute();
+
+            ConstructorInheritance ci= new ConstructorInheritance();
+            ci.main();
 
         }
     }
