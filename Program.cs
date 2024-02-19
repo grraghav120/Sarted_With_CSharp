@@ -1,5 +1,6 @@
 ﻿
 using ConsoleApp1.ArrayExercise;
+using ConsoleApp1.Assignment;
 using ConsoleApp1.CsIntermediate;
 using ConsoleApp1.PolymorphismExercise;
 using ConsoleApp1.PracticeAccessModifiers;
@@ -54,8 +55,20 @@ namespace ConsoleApp1
             //sqlConnection.openConnection();
             //sqlConnection.closeConnection();
 
-            DbCommand dbCommand = new DbCommand(new SqlConnection("MyConnectionString"), "T-SQLCommand");
-            dbCommand.Execute();
+            //DbCommand dbCommand = new DbCommand(new SqlConnection("MyConnectionString"), "T-SQLCommand");
+            //dbCommand.Execute();
+
+            AdvancedCalculatorClass advancedCalculator = new AdvancedCalculatorClass();
+            Console.WriteLine(advancedCalculator.Add(1, 2));
+            Console.WriteLine(advancedCalculator.Add(2.2f, 2.2f));
+            Console.WriteLine(advancedCalculator.Add(1, 2, 3));
+            Console.WriteLine("Result : {0}", advancedCalculator.GetResult());
+            Console.WriteLine(advancedCalculator.Power(2, 4));
+            Console.WriteLine("Result : {0}", advancedCalculator.GetResult());
+
+            //work2 work2 = new work2();
+            //work2.Func();
+
         }
     }
 }

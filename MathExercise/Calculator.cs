@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConsoleApp1.Math
+namespace ConsoleApp1.MathExercise
 {
     public class Calculator
     {
